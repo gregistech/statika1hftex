@@ -1,0 +1,63 @@
+% TODO: make everything a parameter
+
+\subsection{Általánosan}
+
+Az origóba redukált vektorkettőshöz ki kell számolnunk a pontban ható eredő erőt és az oda eltolt koncentrált erőpárok összegét.
+
+$$[\vec{F}; \vec{M_O}] = \ldots$$
+
+Az eredő erőnél egyszerűen csak összeadjuk az összes rendszerben megjelenő erőt.
+
+$$\vec{F} = \sum_{i} \vec{F_i}$$
+
+A koncentrált erőpároknál már nem csak az összes forgatónyomaték összegét kell figyelembe vennünk, hanem azt is hogy 
+% TODO: what exactly do we do here?
+tehát erőinket támadáspontjuk helyvektorával kell vektoriálisan megszorozni és ezt hozzáadni az forgatónyomatékok összegéhez.
+
+$$\vec{M_0} = \sum_{j} \vec{M_j} + \sum_{i} \vec{r}_i \times \vec{F_i}$$
+
+\subsection{Megadott adatainkkal}
+
+Az ábra leolvasásához szükséges lesz használnunk az adatokból leolvasható távolságokat.
+
+$$
+a = 0.3 (m); \space
+b = 0.3 (m); \space
+c = 0.4 (m)
+$$
+
+$\vec{F_1}$ erőnk vektorának nagysága és értelme meghatározható a megadott adatokból, míg $\vec{F_2}$ és $\vec{F_3}$ erő vektorának értelmét az ábráról leolvasható.
+
+$$
+\vec{F_1} = \begin{bmatrix} -2 \\ -1 \\ -1 \end{bmatrix};
+\vec{F_2} = \begin{bmatrix} 0 \\ -1 \\ 0 \end{bmatrix};
+\vec{F_3} = \begin{bmatrix} 1.3 \\ 0 \\ 0 \end{bmatrix}
+$$
+
+...és ezekből az eredő erőt már meg is kaphatjuk. 
+$$
+\vec{F} = 
+\begin{bmatrix} -2 \\ -1 \\ -1 \end{bmatrix} + 
+\begin{bmatrix} 0 \\ -1 \\ 0 \end{bmatrix} + 
+\begin{bmatrix} 1.3 \\ 0 \\ 0 \end{bmatrix}
+= \begin{bmatrix} -0.7 \\ -2 \\ -1 \end{bmatrix} 
+$$
+
+Az erők támadáspontjának helyvektorát egyszerűen leolvashatjuk az ábráról.
+$$
+\vec{r_1} = \begin{bmatrix} a \\ 0 \\ 0 \end{bmatrix} = \begin{bmatrix} 0.3 \\ 0 \\ 0 \end{bmatrix};
+\vec{r_2} = \begin{bmatrix} 0 \\ b \\ c \end{bmatrix} = \begin{bmatrix} 0 \\ 0.3 \\ 0.4 \end{bmatrix};
+\vec{r_3} = \begin{bmatrix} a \\ b \\ c \end{bmatrix} = \begin{bmatrix} 0.3 \\ 0.3 \\ 0.4 \end{bmatrix}
+$$
+
+$\vec{M_1}$ leolvasható a megadott adatokból, míg ${M_2}$-nek csak a nagyságát kapjuk meg de értelmét a mellékelt ábra határozta meg.
+$$
+\vec{M_1} = \begin{bmatrix} 0.8 \\ 0.5 \\ 0.3 \end{bmatrix};
+\vec{M_2} = \begin{bmatrix} 0 \\ 0 \\ -2.1 \end{bmatrix}
+$$
+
+A fentiekből már meg is kaphatjuk az összes % TODO: I still don't know what that does
+
+$$
+\vec{r_1} \times \vec{F_1} = \begin{bmatrix} a \\ 0 \\ 0 \end{bmatrix}
+$$
