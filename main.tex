@@ -1,4 +1,12 @@
-\documentclass{article}
+\documentclass[a4paper]{article}
+
+\usepackage{amssymb}
+
+\usepackage{siunitx}
+
+\usepackage{varwidth}
+
+\usepackage{fancyhdr}
 
 \usepackage{xcolor}
 \usepackage{tikz}
@@ -11,16 +19,47 @@
 \usetikzlibrary{arrows.meta}
 \usepgfplotslibrary{patchplots}
 
+\usepackage[utf8]{inputenc}
+\usepackage{t1enc}
+\def\magyarOptions{defaults=hu-min}
+\usepackage[magyar]{babel}
+
+\usepackage{graphicx}
+\graphicspath{ {./} }
+
+\fancypagestyle{plain}{%
+	\fancyhf{}%
+
+	\fancyhead{}
+	\fancyhead[L]{Vári Gergő}
+	\fancyhead[C]{MQHJ0H}
+	\fancyhead[R]{\includegraphics[scale=.25]{signature}}
+	\setlength{\headheight}{16.5pt}
+
+	\fancyfoot{}
+	\fancyfoot[C]{\thepage}
+}
+
+\pagestyle{plain}
+
 \title{Statika 1. HF}
 \author{Vári Gergő}
 \date{\today}
-% TODO: make date hungarian
 
 \begin{document}
 \maketitle
 
 \section{Axonometrikus ábra}
+\begin{center}
 \input{./axonometry1.tex}
+\end{center}
+\fbox{
+	\begin{varwidth}{\textwidth}
+		M 1:1 [\si{m}]
+		\newline
+		M 1:1 [\si{kN}]
+	\end{varwidth}
+}
 
 \break
 
@@ -30,10 +69,19 @@
 \section{Nyomaték bizonyos tengelyre}
 \input{./nyomatek.tex}
 
-\section{Centrális egyenes pontja és arra redukált vektorkettős}
-\input{./centralis.tex}
+	\section{Centrális egyenes pontja és arra redukált vektorkettős}
+	\input{./centralis.tex}
 
-\section{Kiegészített axonometrikus ábra}
-\input{./axonometry2.tex}
+	\section{Kiegészített axonometrikus ábra}
+	\begin{center}
+	\input{./axonometry2.tex}
+	\end{center}
+	\fbox{
+		\begin{varwidth}{\textwidth}
+			M 1:1 [\si{m}]
+			\newline
+			M 1:1 [\si{kN}]
+		\end{varwidth}
+	}
 
 \end{document}

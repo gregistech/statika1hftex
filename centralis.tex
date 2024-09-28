@@ -1,0 +1,53 @@
+
+\subsection{Általánosan}
+
+Az \textit{e} centrális egyenes origóhoz legközelebbi pontjának helyvektorát az alábbi összefüggéssel tudjuk megtalálni.
+
+$$\vec{r_G} = \frac{\vec{F} \times \vec{M_0}}{|\vec{F}|^2} \Rightarrow G(\vec{r_G}_x, \vec{r_G}_y, \vec{r_G}_z)$$
+
+$$([\vec{F}; \vec{M_G}]_G) = \ldots$$
+
+Ezután az origóba redukált vektorkettősből megkaphatjuk a feladat által elvárt pontba valót.
+
+$$\vec{M_G} = \vec{M_0} + \vec{r_{GO}} \times \vec{F}$$
+
+...nagy figyelmet fordítva a megfelelő előjelre.
+
+$$\vec{r_{GO}} = -\vec{r_G}$$
+
+Majd ellenőrizzük munkánkat azzal hogy az előzőleg kiszámolt $\vec{M_f}$ nyomatékkal kifejezzük a mostani $\vec{M_G}$-t.
+
+$$\vec{F} \cdot \vec{M_G} = \vec{F} \cdot \vec{M_f}$$
+$$\vec{M_f} = M_f \cdot \vec{f}$$
+
+\subsection{Megadott adatainkkal}
+
+$$\vec{r_G} = \frac{
+	\vec{F} \times \vec{M_0}
+}{
+|\vec{F}|^2} = \frac{
+\begin{bmatrix} -0.7 \\ -2 \\ -1 \end{bmatrix} \times \begin{bmatrix} 1.2 \\ 1.32 \\ -2.49 \end{bmatrix}
+}{(\frac{3\sqrt{61}}{10})^2} = \frac{\begin{bmatrix} 6.3 \\ -2.943 \\ 1.476 \end{bmatrix}}{5.49} = \begin{bmatrix} 1.148 \\ -0.536 \\ 0.269 \end{bmatrix}$$
+
+\begin{center}
+	$\Rightarrow \fbox{G(1.148, -0.536, 0.269)}$
+\end{center}
+
+$$\vec{r_{GO}} = -\vec{r_G} = \begin{bmatrix} -1.148 \\ 0.536 \\ -0.269 \end{bmatrix}$$
+$$\vec{M_G} = \vec{M_0} + \vec{r_{GO}} \times \vec{F} = \begin{bmatrix} 1.2 \\ 1.32 \\ -2.49 \end{bmatrix} + \begin{bmatrix} -1.148 \\ 0.536 \\ -0.269 \end{bmatrix} \times \begin{bmatrix} -0.7 \\ -2 \\ -1 \end{bmatrix} = \begin{bmatrix} 0.126 \\ 0.36 \\ 0.181 \end{bmatrix} [\si{kNm}]$$
+
+\begin{center}
+\fbox{
+	\begin{varwidth}{\textwidth}
+		$$([\vec{F}; \vec{M_G}]_G) = \left(\begin{bmatrix} \begin{bmatrix} -0.7 \\ -2 \\ -1 \end{bmatrix};\begin{bmatrix} 0.126 \\ 0.36 \\ -0.181 \end{bmatrix}\end{bmatrix}_G\right) [\text{\si{kN};\si{kNm}}]$$
+	\end{varwidth}
+}
+\end{center}
+
+$$\vec{M_f} = M_f \cdot \vec{f} = -0.423 \cdot \begin{bmatrix} -0.298 \\ -0.853 \\ -0.426 \end{bmatrix} = \begin{bmatrix} 0.126 \\ 0.361 \\ 0.18 \end{bmatrix} [\si{kNm}]$$
+
+\begin{gather}
+\vec{F} \cdot \vec{M_G} = \vec{F} \cdot \vec{M_f} \\
+\begin{bmatrix} -0.7 \\ -2 \\ -1 \end{bmatrix} \cdot \begin{bmatrix} 0.126 \\ 0.36 \\ 0.181 \end{bmatrix} = \begin{bmatrix} -0.7 \\ -2 \\ -1 \end{bmatrix} \cdot  \begin{bmatrix} 0.126 \\ 0.361 \\ 0.18 \end{bmatrix} \\
+\fbox{-0.99 = -0.99 \, \checkmark}
+\end{gather}

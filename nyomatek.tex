@@ -1,0 +1,30 @@
+
+\subsection{Általánosan}
+
+Egy nyomaték hatását egy adott tengelyre megkaphatjuk önmaga és a tengely skaláris szorzatával. Ezen nyomaték párhuzamos lesz az $\vec{F}$ erővel.
+
+$$M_f = \vec{M_o} \cdot \vec{f}$$
+
+A legegyszerűbb egy egységvektort készítenünk az adott erőnkből.
+
+$$\vec{F} \rightarrow \vec{f}: \vec{f} = \frac{\vec{F}}{|\vec{F}|}$$
+
+$$F = |\vec{F}| = \sqrt{F_x^2 + F_y^2 + F_z^2}$$
+
+\subsection{Megadott adatainkkal}
+
+Eddigi számolásaink alapján mindent be is tudunk helyettesíteni.
+
+$$|\vec{F}| = \sqrt{F_x^2 + F_y^2 + F_z^2} = \sqrt{(-0.7)^2 + (-2)^2 + (-1)^2}$$ 
+$$= \sqrt{0.49 + 4 + 1} = \sqrt{5.49} = \frac{3\sqrt{61}}{10} \approx 2.343 \, [\si{N}]$$
+
+$$\vec{f} = \frac{\vec{F}}{|\vec{F}|} = \frac{\begin{bmatrix} -0.7 \\ -2 \\ -1 \end{bmatrix}}{\frac{3\sqrt{61}}{10}} = \begin{bmatrix} -0.298 \\ -0.853 \\ -0.426 \end{bmatrix} [\si{1}]$$
+
+\begin{center}
+\fbox{
+	\begin{varwidth}{\textwidth}
+		$$M_f = \vec{M_o} \cdot \vec{f} = \begin{bmatrix} 1.2 \\ 1.32 \\ -2.49 \end{bmatrix} \cdot \begin{bmatrix} -0.298 \\ -0.853 \\ -0.426 \end{bmatrix} = -0.423 \, [\si{kNm}]$$
+	\end{varwidth}
+}
+\end{center}
+
